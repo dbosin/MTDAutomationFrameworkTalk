@@ -47,4 +47,10 @@ public class JenkinsLoginSteps {
         assert testContext.getPageObjectManager().getHomePage().jenkinsIconIsDisplayed();
     }
 
+
+    @Then("^Credentials alert is displayed$")
+    public void credentials_alert_is_displayed() {
+        assert loginPage.alertIsDisplayed();
+    }
+
 }

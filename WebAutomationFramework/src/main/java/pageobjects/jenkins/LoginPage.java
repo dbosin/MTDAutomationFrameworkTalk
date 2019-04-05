@@ -1,5 +1,6 @@
 package pageobjects.jenkins;
 
+import managers.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +24,9 @@ public class LoginPage {
     @FindBy(how = How.NAME, using = "Submit")
     private WebElement submitButton;
 
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/form/div[1]")
+    private WebElement alert;
+
     public void enterUsername(String username){
         usernameField.clear();
         usernameField.sendKeys(username);
@@ -39,6 +43,10 @@ public class LoginPage {
 
     public void navigateToLoginPage() {
         driver.get("http://localhost:8080");
+    }
+
+    public boolean alertIsDisplayed(){
+        return alert.isDisplayed();
     }
 
 
