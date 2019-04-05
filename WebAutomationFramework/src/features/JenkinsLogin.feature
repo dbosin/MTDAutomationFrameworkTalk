@@ -5,7 +5,7 @@ Feature: JenkinsLogin
 		When User Navigate to LogIn Page
 		And User enters Credentials to LogIn
 		  | Username   | Password |
-		  | Admin | Admin123. |
+		  | admin | Password0. |
 		Then Home page is displayed
 
     @SmokeTestJenkins
@@ -14,7 +14,7 @@ Feature: JenkinsLogin
 		When User Navigate to LogIn Page
 		And User enters Credentials to LogIn
 		  | Username   | Password |
-		  | dbosin | diegote |
+		  | user | Password1. |
 		Then Home page is displayed
 
 #    @SmokeTestJenkins
