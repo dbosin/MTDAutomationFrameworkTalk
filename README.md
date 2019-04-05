@@ -34,10 +34,9 @@ This code implements the basic architecture of a web tests automation framework,
 - [x] Report plugins
 
 
-
 ## Related links:
- - Jenkins: 
- -- https://hub.docker.com/r/jenkins/jenkins
- -- https://github.com/jenkinsci/docker/blob/master/README.md
- - Docker: 
- -- https://docs.docker.com/engine/reference/commandline/docker/
+ ### Jenkins: 
+ - https://hub.docker.com/r/jenkins/jenkins
+ - https://github.com/jenkinsci/docker/blob/master/README.md
+ ### Docker:
+ - https://docs.docker.com/engine/reference/commandline/docker/
